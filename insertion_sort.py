@@ -1,5 +1,6 @@
 import sorting_mods as mod
-#import sys
+import sys
+
 
 def single_item_insertion_sort(some_list, item_pos):
     i = item_pos
@@ -15,6 +16,9 @@ def instertion_sort_all_items(some_list):
         mod.display_bar_chart(some_list)
     return some_list
 
-some_list = mod.create_random_list(30)
 
-instertion_sort_all_items(some_list)
+
+if __name__ == "__main__":
+    list_length = int(sys.argv[1])
+    some_list = mod.create_random_list(list_length)
+    instertion_sort_all_items(some_list)
