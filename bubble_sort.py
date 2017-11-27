@@ -43,3 +43,4 @@ if __name__ == "__main__":
     list_length = int(sys.argv[1])
     example_list = create_random_list(list_length)
     bubble_sort(example_list)
+    print(plt.style.available)
